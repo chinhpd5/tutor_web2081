@@ -1,0 +1,23 @@
+<h1>Đăng ký</h1>
+
+<form [formGroup]="authForm" (ngSubmit)="handleSubmit()">
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input formControlName="email" type="text" class="form-control" id="email">
+    <div *ngIf="authForm.get('email')?.invalid && authForm.get('email')?.touched">
+      <span *ngIf="authForm.get('email')?.errors?.['required']" class="text-danger">Không để trống email</span>
+      <span *ngIf="authForm.get('email')?.errors?.['email']" class="text-danger">Sai định dạng email</span>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input formControlName="password" type="password" class="form-control" id="password">
+    <div *ngIf="authForm.get('password')?.invalid && authForm.get('password')?.touched">
+      <span *ngIf="authForm.get('password')?.errors?.['required']" class="text-danger">Không để trống password</span>
+      <span *ngIf="authForm.get('password')?.errors?.['minlength']" class="text-danger">Cần tối thiểu 6 ký tự</span>
+    </div>
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "email": "chinhpd5@fpt.edu.vn",
+      "password": "$2a$10$CXhSzHfct4wtg2tt8S2dhOnfsHFRoT5LgikVx0eyDCjnlC216cLq6",
+      "id": 1
+    },
+    {
+      "email": "chinhpd51@fpt.edu.vn",
+      "password": "$2a$10$ZaBrDRXzoVqZsS/d.XOq7.RfWNBgSw3KOTf0ZYsa643i09qHUaM4W",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 16 Pro",
+      "price": 1200,
+      "status": true,
+      "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/12/02/iphone-16-pro-max-sa-mac-1.png",
+      "category": "Mobile"
+    },
+    {
+      "id": 2,
+      "name": "Sony WH-1000XM5",
+      "price": 400,
+      "status": false,
+      "image": "https://cdn.hoanghamobile.com/i/previewV2/Uploads/2024/11/18/air-m3-13-inch-starlight-1.png",
+      "category": "Laptop"
+    }
+  ]
+}
